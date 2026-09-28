@@ -243,10 +243,10 @@
                         </div>
                         <div class="comment-form">
                             <h2>Leave a comment</h2>
-                            <form>
+                            <form id="blogCommentForm">
                                 <div class="form-group">
                                     <label for="name">Name *</label>
-                                    <input type="text" class="form-control" id="name">
+                                    <input type="text" class="form-control" id="commentName">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email *</label>
@@ -259,7 +259,7 @@
 
                                 <div class="form-group">
                                     <label for="message">Message *</label>
-                                    <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                                    <textarea id="commentMessage" cols="30" rows="5" class="form-control"></textarea>
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" value="Post Comment" class="btn custom-btn">
@@ -272,7 +272,7 @@
                         <div class="sidebar">
                             <div class="sidebar-widget">
                                 <div class="search-widget">
-                                    <form>
+                                    <form id="blogCommentForm">
                                         <input class="form-control" type="text" placeholder="Search Keyword">
                                         <button class="btn"><i class="fa fa-search"></i></button>
                                     </form>
@@ -651,9 +651,9 @@
                             <p>
                                 Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum nec non quam. Tortor eu placerat rhoncus, lorem quam iaculis felis, sed lacus neque id eros.
                             </p>
-                            <div class="form">
-                                <input class="form-control" placeholder="Email goes here">
-                                <button class="btn custom-btn">Submit</button>
+                            <div class="form newsletter-form">
+                                <input class="form-control" type="email" placeholder="Email goes here" required>
+                                <button class="btn custom-btn" type="submit">Submit</button>
                             </div>
                         </div>
                     </div>
